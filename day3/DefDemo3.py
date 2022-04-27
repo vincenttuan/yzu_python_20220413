@@ -22,6 +22,11 @@ if __name__ == '__main__':
     print('圓面積: %s' % format(float('%.1f' % area), ','))
     print('球體積: %s' % format(float('%.1f' % volume), ','))
 
+    print(nu.get(area))
+    print(nu.get(volume))
+
     print(nu.get(area, 2))
     print(nu.get(volume, 2))
-
+    print(nu.get(volume, 2, True))
+    print(nu.get(volume, 2, False))
+    print(nu.get(volume, mark=False))
