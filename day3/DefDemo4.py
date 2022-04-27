@@ -5,4 +5,8 @@ if __name__ == '__main__':
     cost = nu.getBuyCost(price)
     print(nu.get(cost))
 
+    price = 531
+    reward = nu.getSellReward(price)
+    print(nu.get(reward))
 
+    print(nu.get(reward - cost))
