@@ -2,7 +2,7 @@
 # r: 半徑
 # return area(圓面積), volume(球體積)
 import math
-
+import day3.NumberUtil as nu
 def calcAreaAndVolume(r):
     area = r**2 * math.pi
     volume = 4/3 * math.pi * r**3
@@ -22,5 +22,6 @@ if __name__ == '__main__':
     print('圓面積: %s' % format(float('%.1f' % area), ','))
     print('球體積: %s' % format(float('%.1f' % volume), ','))
 
-
+    print(nu.get(area, 2))
+    print(nu.get(volume, 2))
 
