@@ -12,3 +12,6 @@ print(str)
 #str = str.rstrip() # 去除右側空白
 str = str.strip() # 去除左右空白
 print(str)
+
+path = r"c:\temp\nba.txt"
+print('路徑:', path)

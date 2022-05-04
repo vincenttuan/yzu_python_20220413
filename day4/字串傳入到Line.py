@@ -1,7 +1,7 @@
 # 如何透過 LineNotify 將程式所輸出的字串在 Line 中顯示
 # 類似聊天機器人
 import requests
-token = '你的授權碼'
+token = 'l7dMZUhjw5vlqt3KhGdUA4kpjzlqIeHKCwWB0kW40xL'
 
 # 用來通知 Line
 def lineNotifyMessage(msg):
@@ -18,6 +18,8 @@ def lineNotifyMessage(msg):
 
 # 主程式
 if __name__ == '__main__':
-    msg = '母親節快樂 ! YA~~'
+    msg = '\n母親節\n快樂 ! YA~~'
     lineNotifyMessage(msg)
+
+
 
