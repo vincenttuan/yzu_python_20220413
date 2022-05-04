@@ -20,6 +20,6 @@ for score in scores:
 print()
 print(scores[0])  # 抓取 index = 0 的資料
 print(scores[1])  # 抓取 index = 1 的資料
-
+print(len(scores)) # 取得資料元素個數
 
 
