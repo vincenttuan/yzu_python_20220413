@@ -18,6 +18,11 @@ ans = r.randint(min+1, max-1)
 while True:
     # user 猜數字
     user_guess = int(input('使用者 %d ~ %d 之間猜一數字: ' % (min, max)))
+    # 判斷 user 所猜的是否是合法的資料範圍 ?
+    if user_guess <= min or user_guess >= max:
+        print('數字範圍錯誤')
+        continue  # 重跑回圈
+
     # 判斷 user 是否有猜對 ?
     if user_guess < ans:
         min = user_guess
