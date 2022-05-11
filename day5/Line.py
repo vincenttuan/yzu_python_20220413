@@ -20,10 +20,10 @@ def lineNotifyText(msg):
 # 推播內建小圖
 def lineNotifySticker(packageId, id):
     headers = {
-                "Authorization": "Bearer " + token,
-                "Content-type": "application/x-www-form-urlencoded"
+                "Authorization": "Bearer " + token
               }
     payload = {
+                'message': ' ',  # message 一定要放
                 'stickerPackageId': packageId,
                 'stickerId': id
               }
