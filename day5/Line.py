@@ -33,7 +33,16 @@ def lineNotifySticker(packageId, id):
 
 # 推播地端自訂小圖
 def lineNotifyLocalImage(imageURI):
-    pass
+    headers = {
+        "Authorization": "Bearer " + token
+    }
+    payload = {
+        'message': ' ',  # message 一定要放
+    }
+    imgFile = {'imageFile': open(imageURI, 'rb')}  # r 讀取 b 二進位資料
+
+    response = requests.post(lineNotifyURL, headers=headers, params=payload, files=imgFile)
+    print('回應碼:', response.status_code)
 
 
 
