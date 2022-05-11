@@ -18,8 +18,17 @@ def lineNotifyText(msg):
 
 
 # 推播內建小圖
-def lineNotifySticker(stickerPackageId, stickerId):
-    pass
+def lineNotifySticker(packageId, id):
+    headers = {
+                "Authorization": "Bearer " + token,
+                "Content-type": "application/x-www-form-urlencoded"
+              }
+    payload = {
+                'stickerPackageId': packageId,
+                'stickerId': id
+              }
+    response = requests.post(lineNotifyURL, headers=headers, params=payload)
+    print('回應碼:', response.status_code)
 
 
 # 推播地端自訂小圖
