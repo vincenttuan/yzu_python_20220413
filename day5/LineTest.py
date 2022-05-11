@@ -7,5 +7,5 @@ if __name__ == '__main__' :
     # 測試 sticker 傳送
     line.lineNotifySticker(789, 10887)
 
-
+    
 
