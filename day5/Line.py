@@ -44,5 +44,17 @@ def lineNotifyLocalImage(imageURI):
     response = requests.post(lineNotifyURL, headers=headers, params=payload, files=imgFile)
     print('回應碼:', response.status_code)
 
+# 推播雲端圖片
+def lineNotifyWebImage(imageURI):
+    headers = {
+        "Authorization": "Bearer " + token
+    }
+    payload = {
+        'message': ' ',  # message 一定要放
+        'imageThumbnail': imageURI,
+        'imageFullsize': imageURI,
+    }
 
+    response = requests.post(lineNotifyURL, headers=headers, params=payload)
+    print('回應碼:', response.status_code)
 
