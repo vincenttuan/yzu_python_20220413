@@ -30,3 +30,14 @@ print('資料筆數:', len(result))
 for row in result:  # 逐筆印出資料
     print(row)
 
+# 資料存檔
+if len(result) > 0:
+    file_name = '%s.txt' % keyword
+    file = open(file_name, 'w', encoding='UTF-8')
+    file.write("關鍵字" + keyword + "不合格商品\n")
+    for row in result:
+        file.write(str(row))  # 將 row 轉為字串格式
+        file.write("\n")
+    print('%s.txt 存檔成功' % keyword)
+else:
+    print('關鍵字 %s 沒有資料' % keyword)
