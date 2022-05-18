@@ -21,7 +21,7 @@ bad_foods = tuple(bad_foods)  # 轉為 tuple 的目的是讓分析速度加快
 # 資料分析
 print('資料分析')
 result = []  # 存放資料分析的結果
-keyword = '壽司米'
+keyword = input('請輸入關鍵字:')
 for food in bad_foods:
     if keyword in food['品名']:
         result.append(food)
