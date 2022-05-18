@@ -1,9 +1,10 @@
+import re
 # 練習 split
 # 將字串分割成數組
 #      姓名  年齡 身高  體重
-str = "John,18, 170, 60"
+str = "John,18# 170; 60"
 print(str)
-datas = str.split(",")
+datas = re.split(',|#|;', str)
 print(datas, type(datas))
 
 print(datas[0].strip())  # 姓名
