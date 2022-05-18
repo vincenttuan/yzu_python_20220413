@@ -4,7 +4,7 @@ import re
 #      姓名  年齡 身高  體重
 str = "John,18# 170; 60"
 print(str)
-datas = re.split(',|#|;', str)
+datas = re.split('#|,|;', str)
 print(datas, type(datas))
 
 print(datas[0].strip())  # 姓名
