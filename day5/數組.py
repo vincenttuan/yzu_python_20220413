@@ -32,3 +32,9 @@ print(emps)
 # 列出每一筆元素資料
 for emp in emps:
     print(emp, emp['name'], emp['salary'])
+# 取出總薪資
+sum = 0
+for emp in emps:
+    sum = sum + emp['salary']
+print('總薪資:', sum)
+print('平均薪資:', sum/len(emps))
