@@ -14,8 +14,16 @@ data = data.replace('"', '')
 list = data.split("\r\n")
 print(len(list))
 # ['證券代號', '證券名稱', '殖利率(%)', '股利年度', '本益比', '股價淨值比', '財報年/季', '']
+pe = 10   # 本益比 [4]
+rate = 7  # 殖利率 [2]
+pb = 1    # 股價淨值比 [5]
+print(list[0])
+print(list[1])
+print('------------------------------------------------------------------')
 for row in list:
     #print(len(row.split(",")), row)
     val = row.split(",")
     if len(val) == 8 and val[0] != '證券代號':
-        print(val)
+        # float(字串): 字串轉浮點數
+        if 0 < float(val[4]) < 10:
+            print(val)
