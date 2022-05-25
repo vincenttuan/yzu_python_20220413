@@ -23,7 +23,13 @@ print('------------------------------------------------------------------')
 for row in list:
     #print(len(row.split(",")), row)
     val = row.split(",")
+    '''
+      本益比, 殖利率, 股價淨值比
+      <10    >5%    < 1 (買)
+    '''
     if len(val) == 8 and val[0] != '證券代號':
         # float(字串): 字串轉浮點數
-        if 0 < float(val[4]) < 10:
-            print(val)
+        if 0 < float(val[4]) < pe and \
+                float(val[2]) > rate and \
+                float(val[5]) < pb:
+                    print(val)
