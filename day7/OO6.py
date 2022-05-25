@@ -11,9 +11,7 @@ class Stock:
         self.pb = pb      # 股價淨值比
 
     def __str__(self):
-        return '股票名稱:' + self.name + '\t' \
-               '本益比:' + str(self.pe) + '\t' \
-               '殖利率:' + str(self.rate) + '\t' \
-               '股價淨值比:' + str(self.pb)
+        return '股票名稱:%s 本益比:%f 殖利率:%f 股價淨值比:%f' % \
+               (self.name, self.pe, self.rate, self.pb)
 
 
