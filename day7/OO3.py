@@ -8,3 +8,5 @@ if __name__ == '__main__':
     b.calcBMI()
     print(b)
     print(b.getBMI())
+
+
