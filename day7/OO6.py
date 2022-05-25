@@ -1,9 +1,11 @@
 class Stock:
+    '''
+    可以省略不寫
     name = ''  # 股票名稱
     pe = 0     # 本益比
     rate = 0   # 殖利率
     pb = 0     # 股價淨值比
-
+    '''
     def __init__(self, name, pe, rate, pb):
         self.name = name  # 股票名稱
         self.pe = pe      # 本益比
