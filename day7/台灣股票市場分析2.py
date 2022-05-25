@@ -24,6 +24,18 @@ def get_stock_list():
 
     return stock_list
 
-if __name__ == '__main__':
+def analysis(pe, rate, pb):
+    # 取得所有股票資料
     stock_list = get_stock_list()
-    print(stock_list)
+    for stock in stock_list:
+        if 0 < stock.pe < pe and stock.rate > rate and stock.pb < pb:
+            print(stock)
+
+if __name__ == '__main__':
+    # 取得所有股票資料
+    #stock_list = get_stock_list()
+    #print(stock_list)
+    # 進行分析 pe < 10, rate > 5, pb < 1
+    analysis(10, 5, 1)
+
+
