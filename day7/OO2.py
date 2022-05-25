@@ -12,5 +12,5 @@ class BMI:
         return self.__bmi
 
     def __str__(self):
-        return float(self.h) + ', ' + float(self.w) + ', ' + float(self.__bmi)
+        return str(self.h) + ', ' + str(self.w) + ', ' + str(self.__bmi)
 
