@@ -11,7 +11,8 @@ class Person:
 class Student(Person):
     def __init__(self, name, age, sex, grade):
         # super() 在此指的就是 Person 物件
-        super().__init__(name, age, sex)  # 調用 Person 的 __init__ 方法
+        #super().__init__(name, age, sex)  # 調用 Person 的 __init__ 方法
+        Person.__init__(self, name, age, sex)
         self.grade = grade
 
     def __str__(self):
