@@ -22,3 +22,20 @@ INSERT INTO department(id, dname) VALUES(101, "資訊部");
 INSERT INTO department(id, dname) VALUES(201, "財務部");
 INSERT INTO department(id, dname) VALUES(301, "業務部");
 
+-- 建立員工資料
+INSERT INTO employee(id, ename, esalary, did) VALUES(1,  "John",  50000,  101);
+INSERT INTO employee(id, ename, esalary, did) VALUES(2,  "Mary",  55000,  201);
+INSERT INTO employee(id, ename, esalary, did) VALUES(3,  "Bob",   80000,  301);
+INSERT INTO employee(id, ename, esalary, did) VALUES(4,  "Jack",  76000,  101);
+INSERT INTO employee(id, ename, esalary, did) VALUES(5,  "Helen", 45000,  101);
+INSERT INTO employee(id, ename, esalary, did) VALUES(6,  "Jo",    73000,  201);
+INSERT INTO employee(id, ename, esalary, did) VALUES(7,  "Bobo",  99000,  201);
+INSERT INTO employee(id, ename, esalary, did) VALUES(8,  "Bob",   150000, 301);
+INSERT INTO employee(id, ename, esalary, did) VALUES(9,  "Anita", 180000, 301);
+INSERT INTO employee(id, ename, esalary, did) VALUES(10, "Candy", 38000,  201);
+INSERT INTO employee(id, ename, esalary, did) VALUES(11, "Vincent", 250000, 101);
+INSERT INTO employee(id, ename, esalary, did) VALUES(12, "xbox",    650000, 301);
+
+
+
+
