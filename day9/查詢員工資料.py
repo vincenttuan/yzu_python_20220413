@@ -15,5 +15,5 @@ print('薪資 < 50000')
 for row in rows:
     if row[2] < 50000:
         print(row[0], row[1], row[2], row[3])
-        
-conn.close()  # 資料庫關閉
+
+conn.close()  # 資料庫連線關閉
