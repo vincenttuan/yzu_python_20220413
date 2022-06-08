@@ -82,5 +82,8 @@ FROM employee
 WHERE did = "301"
 
 
-
+-- 查詢員工資料 7
+-- 查出所有人的薪資總和
+SELECT sum(esalary) as "total"
+FROM employee
 
