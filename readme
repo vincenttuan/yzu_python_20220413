@@ -66,3 +66,21 @@ WHERE ename in ("Helen", "Bob")  -- WHERE 限制式
 SELECT sum(esalary) as "total" -- as 加入別名
 FROM employee
 WHERE did = "101"
+
+-- 查詢員工資料 6
+-- 查出各部門的所有人的薪資總和
+SELECT did, sum(esalary) as "total"
+FROM employee
+WHERE did = "101"
+UNION ALL
+SELECT did, sum(esalary) as "total"
+FROM employee
+WHERE did = "201"
+UNION ALL
+SELECT did, sum(esalary) as "total"
+FROM employee
+WHERE did = "301"
+
+
+
+
