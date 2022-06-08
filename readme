@@ -87,3 +87,11 @@ WHERE did = "301"
 SELECT sum(esalary) as "total"
 FROM employee
 
+-- 查詢員工資料 8
+-- 查出所有員工的名字與所隸屬的部門名稱
+-- SELECT e.ename, e.did, d.id, d.dname
+SELECT e.ename, d.dname
+FROM employee e, department d
+WHERE e.did = d.id
+
+
