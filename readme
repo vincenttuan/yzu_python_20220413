@@ -39,5 +39,11 @@ INSERT INTO employee(id, ename, esalary, did) VALUES(12, "xbox",    650000, 301)
 -- 查詢部門資料
 SELECT id, dname FROM department;
 
+-- 查詢員工資料
+SELECT id, ename, esalary, did 
+FROM employee;
+
+
+
 
 
