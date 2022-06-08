@@ -55,5 +55,9 @@ SELECT id, ename, esalary, did
 FROM employee
 WHERE ename = "Helen" OR ename = "Bob"  -- WHERE 限制式
 
-
+-- 查詢員工資料 4
+-- 指定員工姓名
+SELECT id, ename, esalary, did 
+FROM employee
+WHERE ename in ("Helen", "Bob")  -- WHERE 限制式
 
