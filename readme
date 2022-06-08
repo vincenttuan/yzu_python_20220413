@@ -16,3 +16,9 @@ CREATE TABLE IF NOT EXISTS employee( -- 員工資料表
 	memo TEXT, -- 備註
 	did INTEGER -- 該名員工所屬的部門編號
 );
+
+-- 建立部門資料
+INSERT INTO department(id, dname) VALUES(101, "資訊部");
+INSERT INTO department(id, dname) VALUES(201, "財務部");
+INSERT INTO department(id, dname) VALUES(301, "業務部");
+
