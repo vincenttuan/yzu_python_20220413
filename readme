@@ -36,6 +36,8 @@ INSERT INTO employee(id, ename, esalary, did) VALUES(10, "Candy", 38000,  201);
 INSERT INTO employee(id, ename, esalary, did) VALUES(11, "Vincent", 250000, 101);
 INSERT INTO employee(id, ename, esalary, did) VALUES(12, "xbox",    650000, 301);
 
+-- 查詢部門資料
+SELECT id, dname FROM department;
 
 
 
