@@ -2,3 +2,17 @@
 
 Leet Code 題目賞析
 https://leets.android543.com/
+
+-- 建立資料表 Table
+CREATE TABLE IF NOT EXISTS department( -- 部門資料表
+	id INTEGER NOT NULL, -- 部門編號
+	dname TEXT NOT NULL  -- 部門名稱
+);
+
+CREATE TABLE IF NOT EXISTS employee( -- 員工資料表
+	id INTEGER NOT NULL, -- 員工編號
+	ename TEXT NOT NULL, -- 員工姓名
+	esalary INTEGER NOT NULL, -- 員工薪資
+	memo TEXT, -- 備註
+	did INTEGER -- 該名員工所屬的部門編號
+);
