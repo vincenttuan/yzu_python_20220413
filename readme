@@ -105,3 +105,8 @@ SELECT ename, esalary
 FROM employee
 ORDER BY esalary DESC -- DESC 由大到小 ASC 由小到大(預設)
 LIMIT 3 -- 限制只取出 3 位
+
+-- 查詢員工資料 11
+-- 平均薪資
+SELECT avg(esalary) as "avg"
+FROM employee
