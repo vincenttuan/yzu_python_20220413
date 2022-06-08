@@ -119,3 +119,8 @@ ORDER BY esalary DESC
 LIMIT 0, 5 -- 0,  5 第 1 頁 
            -- 5,  5 第 2 頁 
 		   -- 10, 5 第 3 頁 
+
+-- 查詢員工資料 13
+-- 總筆數
+SELECT count(*) as "count"
+FROM employee
