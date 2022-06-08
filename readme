@@ -110,3 +110,12 @@ LIMIT 3 -- 限制只取出 3 位
 -- 平均薪資
 SELECT avg(esalary) as "avg"
 FROM employee
+
+-- 查詢員工資料 12
+-- 分頁
+SELECT * 
+FROM employee
+ORDER BY esalary DESC
+LIMIT 0, 5 -- 0,  5 第 1 頁 
+           -- 5,  5 第 2 頁 
+		   -- 10, 5 第 3 頁 
