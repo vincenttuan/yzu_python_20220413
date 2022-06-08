@@ -43,6 +43,12 @@ SELECT id, dname FROM department;
 SELECT id, ename, esalary, did 
 FROM employee;
 
+-- 查詢員工資料 2
+-- 指定員工姓名
+SELECT id, ename, esalary, did 
+FROM employee
+WHERE ename = "Helen"  -- WHERE 限制式
+
 
 
 
