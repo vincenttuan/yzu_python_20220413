@@ -94,7 +94,14 @@ SELECT e.ename, d.dname
 FROM employee e, department d
 WHERE e.did = d.id
 
--- 查詢員工資料 8
+-- 查詢員工資料 9
 -- 查出所有員工薪資最高的員工名字與薪資
 SELECT ename, max(esalary)
 FROM employee
+
+-- 查詢員工資料 10
+-- 查出所有員工薪資最高前3位的員工名字與薪資
+SELECT ename, esalary
+FROM employee
+ORDER BY esalary DESC -- DESC 由大到小 ASC 由小到大(預設)
+LIMIT 3 -- 限制只取出 3 位
