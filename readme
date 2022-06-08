@@ -61,3 +61,8 @@ SELECT id, ename, esalary, did
 FROM employee
 WHERE ename in ("Helen", "Bob")  -- WHERE 限制式
 
+-- 查詢員工資料 5
+-- 查出 did = 101 的所有人的薪資總和
+SELECT sum(esalary) as "total" -- as 加入別名
+FROM employee
+WHERE did = "101"
