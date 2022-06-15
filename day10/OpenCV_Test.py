@@ -29,9 +29,15 @@ while True:
         flags=cv2.CASCADE_SCALE_IMAGE  # 正常比例檢測
     )
 
+    # 找到人臉個數
     amount = len(faces)
     if(amount > 0):
         print('找到 %d 個人臉' % amount)
+        print(faces)
+
+    # 在臉部周圍畫上矩形
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
     # 將 frame 資料顯示
     cv2.imshow('My camera', frame)
