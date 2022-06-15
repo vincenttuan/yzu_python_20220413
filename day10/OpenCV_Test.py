@@ -17,6 +17,13 @@ while True:
     ret, frame = cap.read()
     print(frame)
 
+    # 將 frame 資料顯示
+    cv2.imshow('My camera', frame)
+
+    # 按下 q 離該
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break;
+
 # 釋放資源
 cap.release()
 cv2.destroyAllWindows()
